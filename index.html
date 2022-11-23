@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				text-align: center;
+			}
+			h1 {
+				color: grey;
+			}
+		</style>
+		<title>Arrays</title>
+	</head>
+	<body>
+		<!-- Declarar um array -->
+		<h1>Como declarar um Array</h1>
+		<h2 id="declarar"></h2>
+		<hr />
+
+		<!-- Buscar o primeiro Elemento -->
+		<h1>Como buscar o primeiro elemento do Array</h1>
+		<h2 id="primeiroElemento"></h2>
+		<hr />
+
+		<!-- Buscar o segundo elemento -->
+		<h1>Buscar o segundo elemento</h1>
+		<h2 id="segundoElemento"></h2>
+		<hr />
+
+		<!-- Buscar o terceiro elemento -->
+		<h1>Buscar o terceiro elemento</h1>
+		<h2 id="terceiroElemento"></h2>
+		<hr />
+
+		<!-- Obter o comprimento do Array -->
+		<h1>Obeter o comprimento do Array</h1>
+		<h2 id="comprimento"></h2>
+		<hr />
+
+		<!-- Como utilizar o loop através do Array -->
+		<h1>Como utilizar o loop através do Array</h1>
+		<h2 id="loop"></h2>
+		<hr />
+
+		<!-- Como adicionar o elemento ao final do Array -->
+		<h1>Como adicionar o elemento ao final do Array</h1>
+		<h2 id="addFinal"></h2>
+		<hr />
+
+		<!--Como adicionar mais elementos ao final do Array  -->
+		<h1>Como adicionar mais elementos ao final do Array</h1>
+		<h2 id="maisElementos"></h2>
+		<hr />
+
+		<h1>Como declarar o array com letras do alfabeto</h1>
+		<h2 id="alfabeto"></h2>
+		<hr />
+
+		<!-- Como organizar o array com o alfabeto -->
+		<h1>Como organizar o array com o alfabeto</h1>
+		<h2 id="ordemAlfabetica"></h2>
+		<hr />
+
+		<!--Como reverter o array com o alfabeto  -->
+		<h1>Como reverter o array com o alfabeto</h1>
+		<h2 id="alfabetoReverso"></h2>
+		<hr />
+
+		<!-- Como declarar o array com números -->
+		<h1>Como declarar o array com números</h1>
+		<h2 id="numeros"></h2>
+		<hr />
+
+		<!--Como encontar o número máximo de um array  -->
+		<h1>Como encontar o número máximo de um array</h1>
+		<h2 id="maior"></h2>
+		<hr />
+
+		<!-- Como encontrar o número mínimo de um array -->
+		<h1>Como encontrar o número mínimo de um array</h1>
+		<h2 id="menor"></h2>
+
+		<!-- Java Script -->
+		<script>
+
+			//Declarar um array
+var objetos = ['tv', 'colher', 'lustre' ]
+console.log (objetos)
+document.getElementById ('declarar').innerHTML = objetos
+			//Buscar o primeiro elemento do Array
+            var primeiro = objetos[0]
+            console.log (primeiro)
+            document.getElementById ('primeiroElemento').innerHTML = primeiro
+			//Buscar o segundo elemento do Array
+
+            console.log (objetos [1])
+            document.getElementById ('segundoElemento').innerHTML = objetos [1]
+        
+			//Buscar o tercero elemento do Array
+
+            console.log (objetos [2])
+            document.getElementById ('terceiroElemento').innerHTML = objetos [2]
+			//Obter o comprimento do Array
+            var comprimento = objetos.length
+            console.log (comprimento)
+            document.getElementById ('comprimento').innerHTML = comprimento
+			//Utilizar Loop no Array
+            var valor = ''
+            for (i=0; i<objetos.length; i++){
+                console.log(objetos[i])
+                valor=valor+objetos[i]+ '<br>'
+            }
+            console.log (valor)
+            document.getElementById ('loop').innerHTML = valor
+			//Adicionar elemento ao final do Array
+            objetos.push ('controle' , 'mesa')
+            console.log (objetos)
+            document.getElementById ('addFinal').innerHTML = objetos
+			//Adicionar mais elementos ao Array
+            objetos.push ('garrafa' , "carregador")
+            console.log (objetos)
+            document.getElementById ('maisElementos').innerHTML = objetos
+			//Colocar letras do alfabeto no Array
+            var alfabeto = ['q','e','g','o','s','b','k']
+            console.log (alfabeto)
+            document.getElementById ('alfabeto').innerHTML = alfabeto
+			//Organizar o Array com o alfabeto
+        
+            
+            console.log (alfabeto.sort())
+            document.getElementById ('ordemAlfabetica').innerHTML = alfabeto.sort()
+			//Reverter o Array com o alfabeto
+            alfabeto.reverse ()
+            console.log (alfabeto)
+            document.getElementById ('alfabetoReverso').innerHTML = alfabeto.sort().reverse()
+			//Declarar o Array com números
+            var numeros = [9,34,12,6,2,7,1]
+            console.log (numeros)
+            document.getElementById ('numeros').innerHTML = numeros
+			//Encontrar o maior número
+            var max = Math.max.apply(Math,numeros)
+            console.log (max)
+            document.getElementById ('maior').innerHTML = max
+			//Encontrar o menor número
+            var min = Math.min.apply(Math,numeros)
+            console.log (min)
+            document.getElementById ('menor').innerHTML = min
+
+
+			
+		</script>
+	</body>
+</html>
